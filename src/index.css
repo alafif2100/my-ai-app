@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --font-sans: 'Cairo', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-brand-50: #f0f6fa;
+  --color-brand-100: #e0ecf6;
+  --color-brand-200: #b9d5ec;
+  --color-brand-500: #004b87; /* Royal Blue */
+  --color-brand-600: #003c6c;
+  --color-brand-700: #002d51;
+  --color-brand-800: #001e36;
+  --color-brand-900: #000f1b;
+  
+  --color-gold-50: #fdfaf2;
+  --color-gold-100: #fbf2db;
+  --color-gold-500: #c5a059; /* Corporate Gold */
+  --color-gold-600: #af8a43;
+  --color-gold-700: #937031;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  direction: rtl;
+}
+
+/* Custom scrollbar for beautiful lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
