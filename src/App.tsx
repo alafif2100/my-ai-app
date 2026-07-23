@@ -907,9 +907,9 @@ export default function App() {
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-200/80 text-center space-y-2 text-xs text-slate-400 font-medium" id="main-footer">
-        <p className="font-sans">© ٢٠٢٦ شركة المنارة المتقدمة - الرياض. جميع الحقوق محفوظة.</p>
+        <p className="font-sans">© ٢٠٢٦الحقوق محفوظة.</p>
         <p className="text-[11px] text-slate-400">
-          تم تطوير وتخصيص هذه اللوحة بأحدث التقنيات الرقمية المتقدمة لوحدة النشر والتأثير الدعوي لشركة المنارة.
+          سعدنا بكم.
         </p>
       </footer>
     </div>
