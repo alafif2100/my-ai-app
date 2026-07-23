@@ -99,16 +99,37 @@ export default function ChartsSection({ stats, isLoading }: ChartsSectionProps) 
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
               <XAxis 
                 dataKey="name" 
-                stroke="#64748b" 
+                stroke="#334155" 
                 tickLine={false} 
                 axisLine={false}
-                tick={{ fontSize: 11, fill: '#1e293b', fontWeight: 600 }}
+                tick={({ x, y, payload }: any) => {
+                  // تقسيم الاسم الطويل إلى أسطر بناءً على المسافات
+                  const words = payload.value.split(' ');
+                  return (
+                    <g transform={`translate(${x},${y})`}>
+                      <text
+                        x={0}
+                        y={0}
+                        dy={10}
+                        textAnchor="middle"
+                        fill="#1e293b"
+                        fontSize={10}
+                        fontWeight={600}
+                        >
+                         {words.map((word: string, index: number) => (
+                           <tspan x={0} dy={index === 0 ? 0 : 12} key={index}>
+                             {word}
+                          </tspan>
+                        ))}
+                      </text>
+                    </g>
+                  );
+                }}
                 interval={0}
-                angle={-35}
-                textAnchor="end"
-                height={75}
+                height={90}
                 reversed={true}
-              />
+                />
+              
               <YAxis 
                 stroke="#64748b" 
                 tickLine={false} 
