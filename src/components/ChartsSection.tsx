@@ -102,11 +102,12 @@ export default function ChartsSection({ stats, isLoading }: ChartsSectionProps) 
                 stroke="#64748b" 
                 tickLine={false} 
                 axisLine={false}
-                tick={{ fontSize: 10 }}
+                tick={{ fontSize: 11, fill: '#1e293b', fontWeight: 600 }}
                 interval={0}
-                angle={-30}
+                angle={-35}
                 textAnchor="end"
-                height={60}
+                height={75}
+                reversed={true}
               />
               <YAxis 
                 stroke="#64748b" 
